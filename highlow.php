@@ -1,10 +1,9 @@
 <?php
 
-// Game gets a random number
-$rand_number = rand(1,100);
+// Game gets a random number and counts number of guesses
+$rand_number = mt_rand(1,100);
 $counter = 1;
-// Write the output
-// Notice the space after the ?
+// Write the output sking user to pick a number
 fwrite(STDOUT, 'Pick a number between 1-100? ');
 
 // Get the number from user
